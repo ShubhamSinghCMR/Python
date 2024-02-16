@@ -1,2 +1,4 @@
 # Python-Projects
-Checkout some cool python projects
+This reposiroty contains made in:
+> Python
+> Django (Python Framework)
