@@ -1,4 +1,2 @@
 # Python-Projects
-This reposiroty contains made in:
-> Python
-> Django (Python Framework)
+This reposiroty contains made in: Python, Django (Python Framework)
