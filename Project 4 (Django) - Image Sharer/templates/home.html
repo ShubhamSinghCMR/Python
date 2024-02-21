@@ -1,0 +1,38 @@
+{% extends "base.html"%}
+{%load thumbnail%}
+
+{% block title %}Home{%endblock%}
+
+{% block body-content %}
+{%if messages%}
+{%for message in messages%}
+<div class="bg-{%if message.tags%}{{message.tags}}{%else%}success{%endif%} bg-gradient text-center text-white py-4">
+    {{message}}
+</div>
+{%endfor%}
+
+{%endif%}
+<h2>Recent Posts</h2>
+<div class="row">
+    {%for post in all_posts%}
+    <div class="col-sm-6 col-md-3">
+        <div class="card my-4">
+            {% thumbnail post.image "100x100" crop="center" as im %}
+            <img src="{{im.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{post.text}}</h5>
+                <a href="{% url 'feed:detail' post.id%}" class="btn btn-primary">Open Details</a>
+            </div>
+        </div>
+        {% endthumbnail %}
+    </div>
+
+    {%empty%}
+    <div class="col-sm-6 offset-3 text-center py-5 my-5">
+        <h3>Welcome!</h3>
+        <p>Start by sharing an image...</p>
+    </div>
+    {%endfor%}
+</div>
+
+{% endblock %}

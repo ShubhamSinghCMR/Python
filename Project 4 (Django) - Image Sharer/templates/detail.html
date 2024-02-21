@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block title %}Post Detail{%endblock%}
+
+{% block body-content %}
+<div class="row">
+    <div class="col-sm-10 offset-col-sm-1 py-5">
+        <h3>{{object.text}}</h3>
+        <img src="{{object.image.url}}" class="img-fluid rounded">
+        <br><br>
+        <h4>Description:</h4>
+        <p>{{object.description}}</p>
+
+    </div>
+</div>
+
+
+{% endblock %}
