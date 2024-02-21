@@ -1,7 +1,16 @@
-from django.views.generic import TemplateView, DetailView, FormView
+from django.views.generic import TemplateView, DetailView, FormView, ListView
 from .models import Post
 from .forms import PostForm
 from django.contrib import messages
+
+class HomePage(ListView):
+    http_method_names=["get"]
+    template_name="home.html"
+    model=Post
+    context_object_name="all_posts"
+    queryset=Post.objects.all().order_by('-id')[0:30]
+
+
 
 class HomePageView(TemplateView):
     template_name="home.html"
