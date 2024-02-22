@@ -26,7 +26,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include(feed_urls,namespace='feed'))
+    path('',include(feed_urls,namespace='feed')),
+    path('',include("allauth.urls")),
 ]
 
 if settings.DEBUG:
