@@ -15,6 +15,10 @@
         {% block body-content %}
         This is base template
         {% endblock %}
+        {%else%}
+        {% block content %}
+        Login to continue...
+        {%endblock%}
         {%endif%}
     </div>
    

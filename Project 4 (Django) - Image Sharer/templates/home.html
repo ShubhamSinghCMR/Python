@@ -20,6 +20,7 @@
             {% thumbnail post.image "100x100" crop="center" as im %}
             <img src="{{im.url}}" class="card-img-top" alt="...">
             <div class="card-body">
+                <h3 class="card-title">{{post.author.username}}</h3>
                 <h5 class="card-title">{{post.text}}</h5>
                 <a href="{% url 'feed:detail' post.id%}" class="btn btn-primary">Open Details</a>
             </div>

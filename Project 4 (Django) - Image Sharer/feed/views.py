@@ -41,7 +41,8 @@ class AddPostView(FormView):
         new_object=Post.objects.create(
             text=form.cleaned_data['text'],
             image=form.cleaned_data['image'],
-            description=form.cleaned_data['description']
+            description=form.cleaned_data['description'],
+            author = self.request.user
         )
         messages.add_message(self.request,messages.SUCCESS,"Image shared successfully...")
         return super().form_valid(form)

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'feed',
     'sorl.thumbnail',
+    'userprofiles',
 ]
 
 MIDDLEWARE = [
