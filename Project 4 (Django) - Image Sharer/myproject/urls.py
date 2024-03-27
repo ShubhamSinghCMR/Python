@@ -19,6 +19,7 @@ from django.urls import path
 
 from django.conf.urls import include
 from feed import urls as feed_urls
+from userprofiles import urls as profile_urls
 
 from django.conf import settings
 
@@ -28,6 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(feed_urls,namespace='feed')),
     path('',include("allauth.urls")),
+    path('',include(profile_urls,namespace='profile')),
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,28 @@
+{% extends "base.html"%}
+{% block title %}{{user.username}}{%endblock%}
+
+{% block body-content %}
+<!-- component -->
+<style>
+    .follow-button {
+        background-color: #007bff; /* Blue color */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>
+<div class="rounded-3xl overflow-hidden shadow-xl max-w-xs my-3 bg-blue-500">
+    <div class="text-center px-3 pb-6 pt-2">
+      <h3 class="text-black text-sm bold font-sans">{{user.username}}</h3>
+      <h5 class="text-black text-sm bold font-sans">Posts: {{total_posts}}</h5>
+  </div>
+  
+</div>
+{% endblock %}
