@@ -1,2 +1,2 @@
 # Python-Projects
-This repository contains projects made in: Python, Django (Python Framework)
+Here, you'll find a collection of diverse projects crafted with Python and leveraging the power of Django, a robust Python framework. 
