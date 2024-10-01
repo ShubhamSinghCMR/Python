@@ -2,7 +2,7 @@
 
 This is an E-Commerce Website developed using Django and Python.
 
-## Docker Setup
+## Project Setup
 
 1. Run:
 
