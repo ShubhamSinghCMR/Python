@@ -1,6 +1,6 @@
 ## About
 
-This is an E-Commerce Website developed using Django and Python.
+This is an E-Commerce Website developed using Django and MySQL.
 
 ## Project Setup
 
