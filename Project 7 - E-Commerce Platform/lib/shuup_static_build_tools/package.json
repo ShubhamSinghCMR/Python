@@ -1,0 +1,11 @@
+{
+  "name": "shuup-static-build-tools",
+  "version": "1.0.4",
+  "description": "Shuup Static Build Tools",
+  "main": "index.js",
+  "keywords": [
+    "shuup",
+    "build",
+    "static"
+  ]
+}

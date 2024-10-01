@@ -1,0 +1,5 @@
+ 
+
+
+class CampaignsInvalidInstanceForCacheUpdate(Exception):
+    pass
