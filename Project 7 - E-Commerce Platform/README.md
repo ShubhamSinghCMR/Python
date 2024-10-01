@@ -1,4 +1,4 @@
-# About
+## About
 
 This is an E-Commerce Website developed using Django and Python.
 
